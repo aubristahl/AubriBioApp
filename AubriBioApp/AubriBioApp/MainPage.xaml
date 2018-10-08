@@ -1,14 +1,42 @@
-﻿0<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AubriBioApp"
              x:Class="AubriBioApp.MainPage">
+  
+    
 
-    <StackLayout>
+    
+        <StackLayout Orientation="Horizontal">
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        
+    	<BoxView Width="50"
+                 Height="50"
+                 BackgroundColor="Gray"/>
+        </StackLayout>
+   
+ 
+    
+        <StackLayout Orientation="Horizontal">
+        <!-- Place new controls here -->
+        
+        <BoxView WidthRequest="50"
+                 HeightRequest="50"
+                 BackgroundColor="Gray"></BoxView>>
+        
+        <BoxView WidthRequest="50"
+                 HeightRequest="50"
+                 BackgroundColor="Gray"></BoxView>
+        
+        <BoxView WidthRequest="50"
+                 HeightRequest="50"
+                 BackgroundColor="Gray"></BoxView>
+        
+        <BoxView WidthRequest="50"
+                 HeightRequest="50"
+                 BackgroundColor="Gray"></BoxView>
+        </StackLayout>
+   
+     
 
 </ContentPage>
