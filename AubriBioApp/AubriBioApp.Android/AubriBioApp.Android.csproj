@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AubriBioApp\AubriBioApp.csproj">
-      <Project>{BE2BC141-1224-44EF-B1BC-9190D5190E87}</Project>
+      <Project>{E3B7E554-3B89-4822-BEA1-992B1BF2D187}</Project>
       <Name>AubriBioApp</Name>
     </ProjectReference>
   </ItemGroup>
