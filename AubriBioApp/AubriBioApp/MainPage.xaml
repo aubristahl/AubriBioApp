@@ -6,48 +6,56 @@
   
     
 
-        <Grid>
-        <StackLayout>
+     <StackLayout>
         <!-- Place new controls here -->
+     
+            <Label BackgroundColor="Black"
+                   Text="about aubri"
+                   TextColor="White"
+                   
+                   HorizontalTextAlignment="Center">  
+            </Label>
+
         
-        <Grid.RowDefinitions>
-        <StackLayout>
-        <RowDefinition />
-        <BoxView HeightRequest="200"
-                 BackgroundColor="Black"/>
-        </StackLayout>
-        </Grid.RowDefinitions> 
+            <Image Source="smileIcon.png"
+               x:Name="imageSmileButton"
+               WidthRequest="75"
+               HeightRequest="75">
+                <Image.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                </Image.GestureRecognizers>
+                </Image>
+       
         
         <StackLayout Padding="20">
-        <Label Text="select an option " />
-        <Button Text="biography"
+        <Label Text="select an option:" />
+        <Button 
+               
+                Text="biography"
+                FontAttributes="Bold"
+                x:Name="biographyButton"
                 IsEnabled="true"
                 BackgroundColor="Yellow"
-                TextColor="Black"/>
+                TextColor="Black"
+                CornerRadius="25"/>
             
         <Button Text="skills"
+                FontAttributes="Bold"
                 IsEnabled="true"
-                x:Name="callEntry"
+                x:Name="skillsButton"
                 BackgroundColor="Yellow"
-                TextColor="Black"/>
+                TextColor="Black"
+                CornerRadius="25"/>
             
         <Button Text="contact me"
+                FontAttributes="Bold"
+                x:Name="contactMeButton"
                 IsEnabled="true"
                 BackgroundColor="Yellow"
-                TextColor="Black"/>
+                TextColor="Black"
+                CornerRadius="25"/>
         </StackLayout>
         
-        
-        <StackLayout Margin="0, 135, 0, 0">
-        <BoxView HeightRequest="50"
-                 BackgroundColor="Black"/>
-        </StackLayout>
-
-        </StackLayout>
-        </Grid>
-   
-
-   
-     
+     </StackLayout>
 
 </ContentPage>
