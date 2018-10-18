@@ -5,57 +5,59 @@
              x:Class="AubriBioApp.MainPage">
   
     
-
-     <StackLayout>
+   
         <!-- Place new controls here -->
-     
-            <Label BackgroundColor="Black"
-                   Text="about aubri"
-                   TextColor="White"
-                   
-                   HorizontalTextAlignment="Center">  
-            </Label>
-
         
-            <Image Source="smileIcon.png"
-               x:Name="imageSmileButton"
-               WidthRequest="75"
-               HeightRequest="75">
+  <ScrollView>  
+   <StackLayout>
+            
+      <Image Source="aboutAubriHeader.png"
+                   WidthRequest="450"
+                   HeightRequest="200"
+               x:Name="aboutAubriHeader">
+                <Image.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                </Image.GestureRecognizers>
+      </Image> 
+            
+            
+      <Label Text="    select an option:"
+               TextColor="Black" />
+        
+            
+      <Image Source="bioButton.png"
+                   WidthRequest="150"
+                   HeightRequest="45"
+                   Margin="5"
+                   x:Name="bioButton">
+                <Image.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                </Image.GestureRecognizers>
+       </Image>
+        
+            
+       <Image Source="skillsButton.png"
+              WidthRequest="150"
+              HeightRequest="45"
+              Margin="5"
+              x:Name="skillsButton">
                 <Image.GestureRecognizers>
                    <TapGestureRecognizer Tapped="Handle_Tapped"/>
                 </Image.GestureRecognizers>
                 </Image>
-       
         
-        <StackLayout Padding="20">
-        <Label Text="select an option:" />
-        <Button 
-               
-                Text="biography"
-                FontAttributes="Bold"
-                x:Name="biographyButton"
-                IsEnabled="true"
-                BackgroundColor="Yellow"
-                TextColor="Black"
-                CornerRadius="25"/>
             
-        <Button Text="skills"
-                FontAttributes="Bold"
-                IsEnabled="true"
-                x:Name="skillsButton"
-                BackgroundColor="Yellow"
-                TextColor="Black"
-                CornerRadius="25"/>
+        <Image Source="contactButton.png"
+               WidthRequest="150"
+               HeightRequest="45"
+               Margin="5" 
+               x:Name="contactButton">
+                <Image.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                </Image.GestureRecognizers>
+                </Image>
             
-        <Button Text="contact me"
-                FontAttributes="Bold"
-                x:Name="contactMeButton"
-                IsEnabled="true"
-                BackgroundColor="Yellow"
-                TextColor="Black"
-                CornerRadius="25"/>
-        </StackLayout>
-        
      </StackLayout>
+    </ScrollView>
 
 </ContentPage>
