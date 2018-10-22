@@ -12,20 +12,26 @@ namespace AubriBioApp
 		public MainPage()
 		{
             InitializeComponent();
-            Image imageButton = new Image
-            {
-                Source = "bioButton.png" };
 
-            TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
-            tapGestureRecognizer.Tapped += async (s, e) => {
-                await Navigation.PushAsync(new MainPage());
-            }; imageButton.GestureRecognizers.Add(tapGestureRecognizer);
 
         }
 
-        void Handle_Tapped(object sender, System.EventArgs e)
+        private void BioButtonGestureRecognizer_OnTapped(object sender, System.EventArgs e)
         {
-            //throw new NotImplementedException();
+            Navigation.PushAsync(new AboutMePage());
         }
-	}
+
+        private void SkillsButton_Tapped(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new skillsPage());
+        }
+
+        private void ContactButton_Tapped(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
+           
+        }
+    }
+
+
 }

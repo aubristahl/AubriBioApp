@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AubriBioApp.AboutMePage"
+             Title="About Me" >
+    <ContentPage.Content>
+        
+       <ScrollView>
+        <StackLayout>
+                <Image Source="BioHeader.png"
+                       WidthRequest="450" HeightRequest="200" >
+                </Image>
+        <StackLayout>
+        <Image Source="Headshot.JPG"
+               WidthRequest="187.5"
+               HeightRequest="125"> 
+        </Image>
+        </StackLayout>
+                
+      <StackLayout Padding="10">     
+        <Label Text="I am an aspiring web developer, creative thinker, and coffee connoisseur. I grew up in a small town in Kansas, and am currentlyattending Pittsburg State University to study Computer Information Systems and Web/Interactive Media.">
+        </Label>       
+        <Label Text="I enjoy staying busy, so I have many hobbies. I’ve recently taken up golf and yoga, and in my free time,you can find me hanging out with my friends or adventuring somewhere in the great outdoors.">
+        </Label>
+        <Label Text="My dream is to work for myself one day, creating beautiful and impressive websites. Check out my skills page to learn about how I can help you make the perfect website.">
+        </Label>
+                    
+      </StackLayout>
+                
+        </StackLayout>
+      </ScrollView>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

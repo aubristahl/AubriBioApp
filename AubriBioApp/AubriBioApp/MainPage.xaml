@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AubriBioApp"
-             x:Class="AubriBioApp.MainPage">
+             x:Class="AubriBioApp.MainPage"
+             Title="Home" >
   
     
    
@@ -13,47 +14,43 @@
             
       <Image Source="aboutAubriHeader.png"
                    WidthRequest="450"
-                   HeightRequest="200"
-               x:Name="aboutAubriHeader">
-                <Image.GestureRecognizers>
-                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
-                </Image.GestureRecognizers>
-      </Image> 
+                   HeightRequest="200"/> 
             
             
       <Label Text="    select an option:"
                TextColor="Black" />
         
             
-      <Image Source="bioButton.png"
+      <Image Source="BioButton.png"
                    WidthRequest="150"
                    HeightRequest="45"
                    Margin="5"
-                   x:Name="bioButton">
+                   x:Name="BioButton">
                 <Image.GestureRecognizers>
-                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                   <TapGestureRecognizer Tapped="BioButtonGestureRecognizer_OnTapped"/>
                 </Image.GestureRecognizers>
        </Image>
         
             
-       <Image Source="skillsButton.png"
+       <Image Source="SkillsButton.png"
               WidthRequest="150"
               HeightRequest="45"
               Margin="5"
-              x:Name="skillsButton">
+              x:Name="SkillsButton">
                 <Image.GestureRecognizers>
-                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                   <TapGestureRecognizer Tapped="SkillsButton_Tapped"/>
                 </Image.GestureRecognizers>
                 </Image>
         
             
-        <Image Source="contactButton.png"
+        
+            <Image Source="ContactButton.png"
                WidthRequest="150"
                HeightRequest="45"
                Margin="5" 
-               x:Name="contactButton">
+               x:Name="ContactButton">
                 <Image.GestureRecognizers>
-                   <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                   <TapGestureRecognizer Tapped="ContactButton_Tapped"/>
                 </Image.GestureRecognizers>
                 </Image>
             
