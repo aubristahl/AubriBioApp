@@ -5,10 +5,27 @@
              Title="Skills" >
     
     <ContentPage.Content>
+        <StackLayout Padding="20"
+                     Spacing="20" >
         
-        <Label Text="This is the skills page" >
-        </Label>
+        <Label Text="My skills"
+               HorizontalTextAlignment="Center" />
+            
+            <ListView x:Name="skillsList" />
+            
+            <Entry x:Name="skillsEntry" 
+                   Placeholder="add skill"/>
+            
+            <Button x:Name="addSkill"
+                    Text="add skill"
+                    Clicked="Handle_Clicked"/>
+            
+            <ListView x:Name="skillsListView"/>
+            
         
+        
+        
+    </StackLayout>    
     </ContentPage.Content>
     
 </ContentPage>

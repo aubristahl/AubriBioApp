@@ -5,9 +5,57 @@
              Title="Contact Me">
     
     <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                
+         <Label Text="contact me for a quote, or any questions."
+               FontSize="20"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Start" />
         
-        <Label Text="This is the contact page.">
-        </Label>
+               
+                
+        <BoxView BackgroundColor="Yellow"
+                 HeightRequest="10"
+                 WidthRequest="100">
+        </BoxView>
+                
+                <BoxView BackgroundColor="Black"
+                 HeightRequest="8"
+                 WidthRequest="100"
+                 >
+        </BoxView> 
         
+        
+           
+         <StackLayout Padding="20"
+                      Spacing="10" >
+                
+                
+     
+        <Entry x:Name="fullNameEntry" 
+                Placeholder = "full name"/>
+                     
+        <Entry x:Name="emailEntry"
+                Placeholder = "email"/>
+                
+        <Entry x:Name="phoneEntry"
+               Placeholder = "phone"/>
+                
+
+            <Label x:Name="messageEntry"
+                   Text="enter your message below"/>
+            
+            <Editor HeightRequest="75"></Editor>
+            <Button Text="Submit"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    CornerRadius="25" 
+                    Clicked="Handle_Clicked"> 
+                </Button>
+       </StackLayout> 
+                </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>
