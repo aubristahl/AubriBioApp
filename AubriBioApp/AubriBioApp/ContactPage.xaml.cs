@@ -30,7 +30,7 @@ namespace AubriBioApp
                 return;
             }
 
-            DisplayAlert("Hello!", "Your message has been sent.","Ok!");
+            DisplayAlert("Hello!", "Your message has been sent","Ok!");
            
         }
 

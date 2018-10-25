@@ -8,6 +8,10 @@
         <ScrollView>
             <StackLayout Padding="20">
                 
+                <Image Source="envelope.png"
+                       WidthRequest="50"
+                       HeightRequest="50"/>
+                
          <Label Text="contact me for a quote, or any questions."
                FontSize="20"
                TextColor="Black"
@@ -27,8 +31,7 @@
                  >
         </BoxView> 
         
-        
-           
+      
          <StackLayout Padding="20"
                       Spacing="10" >
                 
@@ -47,7 +50,7 @@
             <Label x:Name="messageEntry"
                    Text="enter your message below"/>
             
-            <Editor HeightRequest="75"></Editor>
+            <Editor HeightRequest="50"></Editor>
             <Button Text="Submit"
                     BackgroundColor="Yellow"
                     TextColor="Black"
