@@ -11,19 +11,50 @@
         <Label Text="My skills"
                HorizontalTextAlignment="Center" />
             
-            <ListView x:Name="skillsList" />
+            <ListView x:Name="skills"
+                      HasUnevenRows="true">
+                      <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                    <Image WidthRequest="100"
+                                           HeightRequest="40"
+                                           Source="{Binding Icon}"
+                                           Grid.Row="0"
+                                           Grid.Column="0"
+                                           Grid.RowSpan="2"/>
+                                    
+                                    <Label Text="{Binding Name}"
+                                           Font="Bold"
+                                           FontSize="24"
+                                           Grid.Row="0"
+                                           Grid.Column="1"/>
+                                
+                                    <Label Text="{Binding Description}"
+                                           FontSize="12"
+                                           Grid.Row="1"
+                                           Grid.Column="1"/>
+                            </Grid>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+                
+                
+            </ListView>
             
-            <Entry x:Name="skillsEntry" 
-                   Placeholder="add skill"/>
-            
-            <Button x:Name="addSkill"
-                    Text="add skill"
-                    Clicked="Handle_Clicked"/>
-            
-            <ListView x:Name="skillsListView"/>
-            
-        
-        
+ 
         
     </StackLayout>    
     </ContentPage.Content>
