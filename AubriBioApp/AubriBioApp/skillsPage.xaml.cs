@@ -23,6 +23,19 @@ namespace AubriBioApp
 
             skills.ItemsSource = this.Skills;
         }
+
+        void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null) {
+                return;
+            }
+
+            Skill selectedSkill = e.SelectedItem as Skill;
+
+            (sender as ListView).SelectedItem = null;
+
+            DisplayAlert("Hello","You tapped a skill!" + selectedSkill.Name ,"OK!");
+        }
     }
 
     public class Skill

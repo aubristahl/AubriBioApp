@@ -5,13 +5,20 @@
              Title="Skills" >
              
     <ContentPage.Content>
-            <StackLayout Padding="10">
-               <Image Source="SkillsPageHeader.png"
-                       WidthRequest="200"
-                       HeightRequest="100" >
-               </Image>
+            <StackLayout Padding="8">
+
+               <Label Text="my skills"
+                      FontSize="Large"
+                      TextColor="White"
+                      BackgroundColor="Black"
+                      VerticalTextAlignment="Center"
+                      HeightRequest="40"/>
+            
+            
             <ListView x:Name="skills"
-                      HasUnevenRows="true">
+                      HasUnevenRows="true"
+                      ItemSelected="Handle_ItemSelected">
+                
                       <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>  
