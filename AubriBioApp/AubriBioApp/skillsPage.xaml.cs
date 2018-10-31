@@ -9,16 +9,17 @@ namespace AubriBioApp
     {
         public ObservableCollection<Skill> Skills { get; set; }
         void Handle_Clicked(object sender, System.EventArgs e)
-        {    
+        {
         }
 
         public skillsPage()
         {
             InitializeComponent();
             this.Skills = new ObservableCollection<Skill>();
-            this.Skills.Add(new Skill {Icon = "BackendButton.png"});
-            this.Skills.Add(new Skill {Description = "skill1", Name = "- C++" });
-            this.Skills.Add(new Skill {Description = "skill2", Name = "- C#" });
+            this.Skills.Add(new Skill { Icon = "BackendButton.png", Description = "- C++" +"\n"+ "- Visual Basic"});
+            this.Skills.Add(new Skill { Icon = "FrontendButton", Description = "- HTML" +"\n"+"- CSS" + "\n" + "- JavaScript" + "\n" + "- jQuery" });
+            this.Skills.Add(new Skill { Icon = "PeopleSkillsButton", Description = "- Friendly" + "\n" + "- Cusomter Service Experience" + "\n" + "- Responsible" + "\n" + "- Respectful" });
+
 
             skills.ItemsSource = this.Skills;
         }
